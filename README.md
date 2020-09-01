@@ -92,11 +92,11 @@ SSH into the control node and follow the steps below:
 	
 		output.elasticsearch:
 	        hosts: ["10.1.0.4:9200"]
- 	  	username: "elastic"
-	  	password: "changeme"
+ 	  username: "elastic"
+	  password: "changeme"
 
 		setup.kibana:
-	        host: "10.1.0.4:5601"
+	       host: "10.1.0.4:5601"
 
 
 - Run the playbook, and navigate to 
