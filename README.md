@@ -91,7 +91,7 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-configuration.yml file to include
 	
 		output.elasticsearch:
-	 	hosts: ["10.1.0.4:9200"]
+	 		hosts: ["10.1.0.4:9200"]
  	   	username: "elastic"
 	  	password: "changeme"
 
