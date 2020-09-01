@@ -90,13 +90,13 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-configuration.yml file to /etc/ansible/files/.
 - Update the filebeat-configuration.yml file to include
 	
-	output.elasticsearch:
-	hosts: ["10.1.0.4:9200"]
- 	username: "elastic"
-	password: "changeme"
+	-output.elasticsearch:
+	  hosts: ["10.1.0.4:9200"]
+ 	  username: "elastic"
+	  password: "changeme"
 
-	setup.kibana:
-	host: "10.1.0.4:5601"
+	-setup.kibana:
+	  host: "10.1.0.4:5601"
 
 
 - Run the playbook, and navigate to 
