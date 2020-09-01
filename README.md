@@ -81,7 +81,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 	
-	Filebeat collects data about the file system, like files that have changed and when. Metricbeat collects metrics from the operating system and services, such as CPU and memory usage.    
+  Filebeat collects data about the file system, like files that have changed and when. Metricbeat collects metrics from the operating system and services, such as CPU and memory usage.    
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -90,13 +90,13 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-configuration.yml file to /etc/ansible/files/.
 - Update the filebeat-configuration.yml file to include
 	
-	-output.elasticsearch:
-	  hosts: ["10.1.0.4:9200"]
- 	  username: "elastic"
-	  password: "changeme"
+		output.elasticsearch:
+	         hosts: ["10.1.0.4:9200"]
+ 	  	 username: "elastic"
+	  	 password: "changeme"
 
-	-setup.kibana:
-	  host: "10.1.0.4:5601"
+		setup.kibana:
+	         host: "10.1.0.4:5601"
 
 
 - Run the playbook, and navigate to 
